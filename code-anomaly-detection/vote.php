@@ -26,11 +26,15 @@ if (empty($anomaly_type_id)) {
     output(null, -4, "Anomaly type id is not specified");
 }
 
-if (empty($anomaly_id)) {
-    output(null, -5, "Anomaly id is not specified");
+if (empty($anomaly_gist_id)) {
+    output(null, -9, "Anomaly gist id is not specified");
 }
 
-if (empty($vote) || in_array($vote, $vote_variants)) {
+if (empty($anomaly_filename)) {
+    output(null, -5, "Anomaly filename is not specified");
+}
+
+if (empty($vote) || !in_array($vote, $vote_variants)) {
     output(null, -6, "Vote incorrect (from 1 to 5)");
 }
 
@@ -75,6 +79,8 @@ $vote_result = $mysqli->query("SELECT * from votes WHERE anomaly_id = '$anomaly_
 
 if ($vote_result->num_rows === 0) {
     $mysqli->query("INSERT INTO votes(anomaly_id, user_id, vote) VALUES('$anomaly_id', '$user_id', '$vote')");
+    output(array("status" => "added"));
 } else {
     $mysqli->query("UPDATE votes SET vote = '$vote' WHERE anomaly_id = '$anomaly_id' AND user_id = '$user_id'");
+    output(array("status" => "updated"));
 }
