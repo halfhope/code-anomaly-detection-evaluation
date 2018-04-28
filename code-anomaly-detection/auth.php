@@ -1,6 +1,7 @@
 <?php
 
-header('Access-Control-Allow-Origin: https://petukhovvictor.github.io/', false);
+header('Access-Control-Allow-Origin: https://petukhovvictor.github.io', false);
+header('Access-Control-Allow-Origin: https://localhost', false);
 
 require_once "./helpers/mysqli.php";
 require_once "./helpers/util.php";
