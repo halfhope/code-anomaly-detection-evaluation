@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="9aea06c4-33dd-496c-a876-761e850969df" name="92.53.104.59" url="http://92.53.104.59">
+        <fileTransfer host="92.53.104.59" port="22" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="dd914fde-2d82-4eee-9a34-829641582de2" name="92.53.104.59 (1)" url="http://92.53.104.59">
+        <fileTransfer host="92.53.104.59" port="22" rootFolder="/var/www/html/code-anomaly-detection/server" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
