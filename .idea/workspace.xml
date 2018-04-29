@@ -57,11 +57,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="users" pinned="false" current-in-tab="false">
-        <entry file="das://6380d5a6-187d-4b3c-9609-fce41664bc3c/schema/cad/table/users">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
+      <file leaf-file-name="console_6.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6380d5a6-187d-4b3c-9609-fce41664bc3c/console_6.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -69,8 +69,8 @@
       <file leaf-file-name="mysqli.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/helpers/mysqli.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+            <state>
+              <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -202,8 +202,7 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="node" />
-    <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -317,7 +316,7 @@
       <workItem from="1511089924686" duration="104000" />
       <workItem from="1524390056448" duration="78000" />
       <workItem from="1524593713453" duration="3000" />
-      <workItem from="1524850125641" duration="14287000" />
+      <workItem from="1524850125641" duration="14721000" />
     </task>
     <task id="LOCAL-00001" summary="Add code anomaly detection directory">
       <created>1524860576280</created>
@@ -358,10 +357,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120816000" />
+    <option name="totallyTimeSpent" value="121250000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50305253" side_tool="true" weight="0.3025641" />
@@ -369,11 +369,11 @@
       <window_info anchor="bottom" id="File Transfer" order="11" weight="0.3271795" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.4969475" visible="true" weight="0.3025641" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4969475" visible="true" weight="0.3025641" />
       <window_info anchor="right" id="Remote Host" order="3" weight="0.23382173" />
       <window_info anchor="bottom" id="TypeScript" order="10" weight="0.32891566" />
       <window_info anchor="bottom" id="Database Console" weight="0.32923076" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22710623" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22710623" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" visible="true" weight="0.24969475" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32923076" />
@@ -736,13 +736,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6380d5a6-187d-4b3c-9609-fce41664bc3c/console_6.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code-anomaly-detection/server/auth.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -764,10 +757,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6380d5a6-187d-4b3c-9609-fce41664bc3c/console_6.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/helpers/mysqli.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        <state>
+          <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
         </state>
       </provider>
     </entry>
