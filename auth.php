@@ -1,16 +1,24 @@
 <?php
 
+ini_set('session.cookie_lifetime', 60 * 60 * 24 * 365);
+ini_set('session.gc_maxlifetime', 60 * 60 * 24 * 365);
+
 require_once "./helpers/mysqli.php";
 require_once "./helpers/util.php";
 
 session_start();
 
 if (!empty($_SESSION['id'])) {
-    output(array("code" => $_SESSION['code']));
+    output(
+        array(
+            "code" => $_SESSION['code'],
+            "email" => $_SESSION['email']
+        )
+    );
 }
 
-$email = $_REQUEST["email"];
-$access_code = $_REQUEST["code"];
+$email = trim($_REQUEST["email"]);
+$access_code = trim($_REQUEST["access_code"]);
 
 if (empty($email)) {
     output(null, -1, 'Not specified email');
@@ -38,14 +46,26 @@ if ($result = $mysqli->query("SELECT * from users WHERE email = '$email_escaped'
             $user = $result->fetch_object();
             $_SESSION['id'] = $user->id;
             $_SESSION['code'] = $user->code;
-            output(array("code" =>  $user->code));
+            $_SESSION['email'] = $email;
+            output(
+                array(
+                    "code" =>  $user->code,
+                    "email" =>  $email
+                )
+            );
         }
     } else {
         $code = digits_generate();
         $mysqli->query("INSERT INTO users(email, code) VALUES('$email_escaped', $code)");
         $_SESSION['id'] = $mysqli->insert_id;
         $_SESSION['code'] = $code;
-        output(array("code" => $code));
+        $_SESSION['email'] = $email;
+        output(
+            array(
+                "code" => $code,
+                "email" => $email
+            )
+        );
     }
 
     $result->close();
